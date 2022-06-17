@@ -17,5 +17,13 @@ const getFortune = () => {
         })
 };
 
+const getQuote = () => {
+    axios.get("http://localhost:4000/api/quote")
+        .then((res) => {
+            const data = res.data;
+            alert(data);
+        })
+};
+
 complimentBtn.addEventListener('click', getCompliment);
 fortuneBtn.addEventListener("click", getFortune)
