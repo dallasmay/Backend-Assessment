@@ -30,7 +30,7 @@ module.exports = {
                 image: "https://upload.wikimedia.org/wikipedia/en/b/bb/General_Iroh.jpg"
             },
             {
-                quote: "Happiness can be found even in the darkest of times, when one onle remembers to turn on the light",
+                quote: "Happiness can be found even in the darkest of times, if one only remembers to turn on the light",
                 speaker: "Albus Dumbledore",
                 image: "https://www.harrypotterfansclub.com/wp-content/uploads/what-is-the-full-name-of-albus-dumbledore-quora.jpeg"
             },
@@ -50,20 +50,25 @@ module.exports = {
                 image: "https://pbs.twimg.com/media/Ez_Ch0GUUAIzc80?format=jpg&name=medium"
             }
         ];
-        //choosing random quote
-        const indexGenerator = () => {
-            return Math.floor(Math.random() * quotes.length);
-        };
-        let randomIndex = indexGenerator();    
-        let usedIndexes = [];
-        //ensuring no duplicate quotes per session
-        for (let i = 0; usedIndexes.includes(randomIndex); i++) {
-            if (usedIndexes[i])
-        }
-
-        let randomQuote = quotes[randomIndex].quote;
-
-        res.status(200).send(randomQuote);
+        // //choosing random quote
+        // const indexGenerator = () => {
+        //     return Math.floor(Math.random() * quotes.length);
+        // };
+        // let randomIndex = indexGenerator();    
+        // let usedIndexes = [];
+        // let randomQuote = "";
+        // //ensuring no duplicate quotes per session
+        // if (usedIndexes.length === 0) {
+        //     usedIndexes.push(randomIndex);
+        //     randomQuote = quotes[randomIndex].quote;
+        // } else {
+        //     while (usedIndexes.includes(randomIndex)) {
+        //         indexGenerator();
+        //     };
+        // }
+        let randomIndex = Math.floor(Math.random() * quotes.length);
+        let randomQuoteObj = quotes[randomIndex];
+        res.status(200).send(randomQuoteObj);
     }
 
 }
