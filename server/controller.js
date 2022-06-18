@@ -50,9 +50,18 @@ module.exports = {
                 image: "https://pbs.twimg.com/media/Ez_Ch0GUUAIzc80?format=jpg&name=medium"
             }
         ];
+        //choosing random quote
+        const indexGenerator = () => {
+            return Math.floor(Math.random() * quotes.length);
+        };
+        let randomIndex = indexGenerator();    
+        let usedIndexes = [];
+        //ensuring no duplicate quotes per session
+        for (let i = 0; usedIndexes.includes(randomIndex); i++) {
+            if (usedIndexes[i])
+        }
 
-        let randomIndex = Math.floor(Math.random() * fortunes.length);
-        let randomQuote = quotes[randomIndex];
+        let randomQuote = quotes[randomIndex].quote;
 
         res.status(200).send(randomQuote);
     }

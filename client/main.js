@@ -1,5 +1,6 @@
 const complimentBtn = document.getElementById("complimentButton");
 const fortuneBtn = document.getElementById("fortuneButton");
+const quoteBtn = document.getElementById("quoteButton");
 
 const getCompliment = () => {
     axios.get("http://localhost:4000/api/compliment/")
@@ -26,4 +27,5 @@ const getQuote = () => {
 };
 
 complimentBtn.addEventListener('click', getCompliment);
-fortuneBtn.addEventListener("click", getFortune)
+fortuneBtn.addEventListener("click", getFortune);
+quoteBtn.addEventListener("click", getQuote);
