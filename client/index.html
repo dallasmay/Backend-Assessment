@@ -5,15 +5,20 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL&family=Joan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital@0;1&family=Joan&display=swap" rel="stylesheet">
   </head>
   <body class="container">
     <button id="complimentButton">Get a compliment</button>
     <button id="fortuneButton">Get a fortune!</button>
-    <button id="quoteButton">Get a quote!</button>
+    <div id="quote-button-container">
+      <button id="quoteButton">Get a quote!</button>
+    </div>
     <br>
-    <div id="quote-container">
-
+    <div id="quote-flex-container">
+      <div id="quote-space-container">
+        <div id="quote-container"></div>
+        <div id="speaker"></div>
+      </div>
     </div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

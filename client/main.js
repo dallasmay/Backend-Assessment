@@ -2,6 +2,7 @@ const complimentBtn = document.getElementById("complimentButton");
 const fortuneBtn = document.getElementById("fortuneButton");
 const quoteBtn = document.getElementById("quoteButton");
 const quoteContainer = document.getElementById("quote-container");
+const speakerContainer = document.getElementById("speaker");
 
 // Setting up time delay function, makes setTimeout function run synchronously
 function delay(n){
@@ -54,10 +55,16 @@ const getQuote = () => {
                     hiddenSpan.textContent = words[i] + " ";
                     quoteContainer.appendChild(hiddenSpan);
         
-                    // Where the fun begins
+                    // Where the fun begins. Waits .25 seconds for all words minus words after commas or periods. Waits .95 seconds for words after commas and 1.25 seconds for words after periods
                     await delay(delayTime);
                     hiddenSpan.classList.toggle("reveal");
                 };
+                let speakerElement = document.createElement("div");
+                speakerElement.classList.add("hidden");
+                speakerElement.textContent = "-" + speaker;
+                speakerContainer.appendChild(speakerElement);
+                await delay(1500);
+                speakerElement.classList.toggle("reveal");
             };
             myAsyncFunction();
             // alert(quote);

@@ -30,7 +30,7 @@ module.exports = {
                 image: "https://upload.wikimedia.org/wikipedia/en/b/bb/General_Iroh.jpg"
             },
             {
-                quote: "Happiness can be found even in the darkest of times, if one only remembers to turn on the light",
+                quote: "Happiness can be found, even in the darkest of times, if one only remembers to turn on the light",
                 speaker: "Albus Dumbledore",
                 image: "https://www.harrypotterfansclub.com/wp-content/uploads/what-is-the-full-name-of-albus-dumbledore-quora.jpeg"
             },

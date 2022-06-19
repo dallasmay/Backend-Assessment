@@ -2,10 +2,10 @@
     display: flex;
     justify-content: center;
 } */
-body {
+/* body {
     font-family: 'Joan', serif;
     font-weight: 400;
-}
+} */
 span {
     font-size: 50px;
 }
@@ -22,4 +22,32 @@ span {
     transition-duration: 0.9s;
     transition-timing-function: ease-in;
     /* color: red; */
+}
+#quote-flex-container {
+    display: flex;
+    justify-content: center;
+}
+#quote-space-container {
+    width: 70vw;
+}
+#quote-container {
+    font-family: 'Joan', serif;
+    font-weight: 400;
+}
+#quote-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+/* #quote-button {
+    
+} */
+#speaker {
+    font-family: 'Joan', serif;
+    font-size: 35px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 35px;
 }
