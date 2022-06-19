@@ -34,14 +34,38 @@ span {
     font-family: 'Joan', serif;
     font-weight: 400;
 }
+#comp-fort-container{
+    display: flex;
+    justify-content: center;
+}
 #quote-button-container {
     display: flex;
     justify-content: center;
     margin: 25px;
 }
-/* #quote-button {
-    
-} */
+.button {
+    /* font-family: 'Joan', serif; */
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    background-color: rgb(186, 236, 252);
+	border: 2px solid rgb(30, 122, 134);
+	color: rgb(10, 38, 82);
+	padding: 10px 25px;
+	margin-left: 15px;
+	margin-top: 10px;
+	border-radius: 6px;
+	font-weight: bold;
+	transition-duration: 0.4s;
+}
+.button:hover {
+    background-color: rgb(180, 227, 241);
+	color: rgb(10, 38, 82);
+	padding: 10px 25px;
+	margin-left: 15px;
+	border-radius: 6px;
+	font-weight: bold;
+	cursor:pointer;
+}
 #speaker {
     font-family: 'Joan', serif;
     font-size: 35px;
