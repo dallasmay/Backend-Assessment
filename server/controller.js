@@ -100,7 +100,7 @@ module.exports = {
             quotes.splice(8, (quotes.length - 8))
             res.status(200).send("Quotes deleted successfully");
         } else {
-            res.status(200).send("There are no inputted quotes to delete");
+            res.status(200).send("There are no submitted quotes to delete");
         }
             
     },

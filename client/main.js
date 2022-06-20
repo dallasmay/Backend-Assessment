@@ -4,6 +4,7 @@ const quoteBtn = document.getElementById("quoteButton");
 const quoteContainer = document.getElementById("quote-container");
 const speakerContainer = document.getElementById("speaker");
 const quoteForm = document.getElementById("input-form");
+const deleteBtn = document.getElementById("deleteButton");
 
 const getCompliment = () => {
     axios.get("http://localhost:4000/api/compliment/")
@@ -139,3 +140,4 @@ complimentBtn.addEventListener('click', getCompliment);
 fortuneBtn.addEventListener("click", getFortune);
 quoteBtn.addEventListener("click", getQuote);
 quoteForm.addEventListener("submit", postQuote);
+deleteBtn.addEventListener("click", deleteAllInputQuotes);

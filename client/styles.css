@@ -138,4 +138,14 @@ span {
 /* #button-container {
     opacity: 0%;
 } */
+#deleteButton {
+    background-color: rgb(252, 186, 186);
+    color: rgb(82, 10, 10);
+    border-color: rgb(82, 10, 10);
+}
+#deleteButton:hover {
+    background-color: rgb(240, 176, 176);
+    color: rgb(82, 10, 10);
+    border-color: rgb(82, 10, 10);
+}
 
