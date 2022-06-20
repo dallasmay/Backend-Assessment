@@ -48,6 +48,16 @@ module.exports = {
                 quote: "Aim for the sun. That way if you miss, at least your arrow will fall far away, and the person it kills will likely be someone you don't know",
                 speaker: "Wit",
                 image: "https://pbs.twimg.com/media/Ez_Ch0GUUAIzc80?format=jpg&name=medium"
+            },
+            {
+                quote: "All you have to decide is what to do with the time that is given to you",
+                speaker: "Gandalf",
+                image: ""
+            },
+            {
+                quote: "Some believe that it is only great power that can hold evil in check, but that is not what I have found. I found it is the small, everyday deeds of ordinary folk that keep the darkness at bay. Small acts of kindess and love",
+                speaker: "Gandalf",
+                image: ""
             }
         ];
         // //choosing random quote
