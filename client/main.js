@@ -3,6 +3,7 @@ const fortuneBtn = document.getElementById("fortuneButton");
 const quoteBtn = document.getElementById("quoteButton");
 const quoteContainer = document.getElementById("quote-container");
 const speakerContainer = document.getElementById("speaker");
+const quoteForm = document.getElementById("input-form");
 
 // Setting up time delay function, makes setTimeout function run synchronously
 function delay(n){
@@ -71,6 +72,26 @@ const getQuote = () => {
         })
 };
 
+const submitHandler = (e)  => {
+    e.preventDefault();
+
+    let quote = document.getElementById("quote-input");
+    let speaker = document.getElementById("speaker-input");
+    
+
+    let bodyObj = {
+        quote: quote.value,
+        speaker: speaker.value, 
+        image: ""
+    }
+
+    axios.post("http://localhost:4000/api/quoteInput", bodyObj).then((req, res) => {console.log(req.data)});
+
+    quote.value = ''
+    speaker.value = ''
+}
+
 complimentBtn.addEventListener('click', getCompliment);
 fortuneBtn.addEventListener("click", getFortune);
 quoteBtn.addEventListener("click", getQuote);
+quoteForm.addEventListener("submit", submitHandler);

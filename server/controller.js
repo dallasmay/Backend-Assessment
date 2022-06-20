@@ -21,12 +21,12 @@ module.exports = {
         const quotes = [
             {
                 quote: "In the darkest times, hope is something you give yourself. That is the meaning of inner strength",
-                speaker: "Uncle Iroh",
+                speaker: "Iroh",
                 image: "https://i0.wp.com/www.society19.com/wp-content/uploads/2020/07/iroh.jpg?fit=1000%2C1000&ssl=1"
             }, 
             {
                 quote: "Sometimes the best way to solve your own problems is to help someone else",
-                speaker: "Uncle Iroh", 
+                speaker: "Iroh", 
                 image: "https://upload.wikimedia.org/wikipedia/en/b/bb/General_Iroh.jpg"
             },
             {
@@ -69,6 +69,12 @@ module.exports = {
         let randomIndex = Math.floor(Math.random() * quotes.length);
         let randomQuoteObj = quotes[randomIndex];
         res.status(200).send(randomQuoteObj);
-    }
+    },
+    postQuote: (req, res) => {
+        const quoteObject = req.body;
+        console.log(quoteObject);
+        res.status(200)
+        .send(quoteObject);
+    },
 
 }

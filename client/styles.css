@@ -30,18 +30,29 @@ span {
 #quote-space-container {
     width: 70vw;
 }
+#top-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70 vw;
+}
 #quote-container {
     font-family: 'Joan', serif;
     font-weight: 400;
 }
-#comp-fort-container{
+/* #comp-fort-container{
     display: flex;
     justify-content: center;
-}
-#quote-button-container {
+} */
+/* #quote-button-container {
     display: flex;
     justify-content: center;
     margin: 25px;
+} */
+#input-form {
+    display: block;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: rgb(10, 38, 82);
 }
 .button {
     /* font-family: 'Joan', serif; */
@@ -75,3 +86,53 @@ span {
     padding-left: 100px;
     padding-top: 35px;
 }
+.text-input {
+    display: block;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(242, 245, 247);
+    border-color: rgb(30, 122, 134);
+    border-radius: 5px;
+    
+}
+::placeholder {
+    color: rgb(10, 38, 82);
+}
+#quote-submit-button {
+    margin-left: 10px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    background-color: rgb(188, 252, 186);
+	border: 2px solid rgb(30, 134, 77);
+	color: rgb(24, 112, 64);
+	padding: 5px 10px;
+	border-radius: 6px;
+	font-weight: bold;
+	transition-duration: 0.4s;
+}
+#quote-submit-button:hover {
+    margin-left: 10px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    background-color: rgb(179, 240, 176);
+	border: 2px solid rgb(30, 134, 77);
+	color: rgb(24, 112, 64);
+	padding: 5px 10px;
+	border-radius: 6px;
+	font-weight: bold;
+	transition-duration: 0.4s;
+    cursor:pointer;
+}
+#submit-button-flex-container {
+    display: flex;
+    justify-content: center;
+}
+#input-form-container {
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(186, 236, 252);
+    border: solid;
+    border-color: rgb(30, 122, 134);
+    border-radius: 5px;
+}
+

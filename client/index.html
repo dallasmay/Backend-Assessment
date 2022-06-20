@@ -8,12 +8,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital@0;1&family=Joan&display=swap" rel="stylesheet">
   </head>
   <body class="container">
-    <div id="comp-fort-container">
-      <button id="complimentButton" class="button">Get a compliment</button>
-      <button id="fortuneButton" class="button">Get a fortune</button>
-    </div>
-    <div id="quote-button-container">
-      <button id="quoteButton" class="button">Quote</button>
+    <div id="top-container">
+      <span id="button-container">
+        <span id="comp-fort-container">
+          <button id="complimentButton" class="button">Get a compliment</button>
+          <button id="fortuneButton" class="button">Get a fortune</button>
+        </span>
+        <span id="quote-button-container">
+          <button id="quoteButton" class="button">Quote</button>
+        </span>
+      </span>
+      <span id="input-form-container">
+        <form id="input-form">
+          <p>Enter your own quote</p>
+          <input id="quote-input" class="text-input" type="text" placeholder="Quote (no quotations)">
+          <input id="speaker-input" class="text-input" type="text" placeholder="Speaker">
+          <div id="submit-button-flex-container">
+            <button type="submit" id="quote-submit-button">Submit</button>
+          </div>
+        </form>
+      </span>
     </div>
     <br>
     <div id="quote-flex-container">
@@ -22,7 +36,7 @@
         <div id="speaker"></div>
       </div>
     </div>
-
+    
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
 
