@@ -119,7 +119,14 @@ const postQuote = (e)  => {
 
     quote.value = ''
     speaker.value = ''
-}
+};
+
+const deleteAllInputQuotes = () => {
+    axios.delete("http://localhost:4000/api/quoteDelete")
+    .then((res) => {
+        alert(res.data);
+    })
+};
 
 // Setting up time delay function, makes setTimeout function run synchronously
 function delay(n){

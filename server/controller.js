@@ -95,5 +95,14 @@ module.exports = {
         quotes.push(quoteObject);
         res.status(200).send(quoteObject);
     },
+    deleteQuote: (req, res) => {
+        if (quotes.length > 8) {
+            quotes.splice(8, (quotes.length - 8))
+            res.status(200).send("Quotes deleted successfully");
+        } else {
+            res.status(200).send("There are no inputted quotes to delete");
+        }
+            
+    },
 
 }
