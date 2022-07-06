@@ -54,6 +54,7 @@ const getQuote = () => {
                     await delay(delayTime);
                     hiddenSpan.classList.toggle("reveal");
                 };
+                // Adding speaker to quote
                 let speakerElement = document.createElement("div");
                 speakerElement.classList.add("hidden");
                 speakerElement.textContent = "-" + speaker;
